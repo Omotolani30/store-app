@@ -19,7 +19,7 @@
     grid-template-columns: 90% 20%;
     padding: 16px;
 }
-.dress{
+.dress, .shoe, .watch{
     margin: auto;
     width: 300px;
     height: 250px;
