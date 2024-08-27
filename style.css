@@ -12,20 +12,25 @@
 
 nav{
     display: flex;
-    justify-content: space-around;
-    margin: 20px auto;
+    /* justify-content: space-around; */
+    /* margin: 20px auto; */
     padding: 32px;
-    width: 60vw;
+    width: 100vw;
     align-items: center;
     background: linear-gradient(to right, #6CA2AE, #ffffff);
     color: #333333;
+    /* position: sticky; */
+    top: 0;
+    height: 5vw;
 }
 .logo{
-    width: 30%;
+    width: 10%;
 }
 .nav-items{
     display: flex;
     padding: 16px;
+    margin-right: 96px;
+    border: solid red;
 }
 .nav-items ul{
     display: flex;
