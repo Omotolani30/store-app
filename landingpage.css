@@ -14,7 +14,7 @@
     font-optical-sizing: auto;
 }
 
-nav{
+.nav{
     display: flex;
     padding: 16px 32px 16px;
     width: 100%;
@@ -23,12 +23,12 @@ nav{
     color: #333333;
     position: fixed;
     top: 0;
-    height: 5vw;
+    height: 4vw;
     justify-content: space-around;
     z-index: 1000;
 }
 .logo{
-    width: 5%;
+    width: 6%;
     margin-left: 64px;
 }
 .nav-items{
@@ -58,11 +58,11 @@ nav{
 
 
 .hero{
-    margin-top: 80px;
-    padding: 96px;
+    margin-top: 48px;
+    padding: 80px;
     background-color: #EE386A;
     display: flex;
-    gap: 150px;
+    gap: 100px;
 }
 .hero-content{
     color: white;
@@ -100,39 +100,30 @@ nav{
     font-size: 15px;
     background-color: #6CA2AE;
     color: white;
-    display: flex;
-    gap: 10px;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
-.btn-img{
-    width: 20px;
-}
 .hero-btn:hover{
-    transform: translateX(10px);
+    transform: translateY(-10px);
 }
 .hero-img img{
-    margin-top: 48px;
+    margin-top: 56px;
     width: 100%;
-    border-radius: 50px;
+    border-radius: 25px;
 }
 
 .about{
     margin: 64px 0px;
-    padding: 120px 64px;
-    background-color: #ee3868f5;
+    padding: 64px;
     color: white;
     background-image: url("Assets/english-books-with-blue-background.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
 }
 .about-head{
     font-size: 40px;
     text-align: center;
-    opacity: 0;
-    transform: translateY(-100%);
-    animation: slideIn 1s ease-out forwards;
 }
 .about-body{
     padding: 64px 240px;
@@ -145,12 +136,12 @@ nav{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    nav{
+    .nav{
         display: flex;
         padding: 16px 32px 16px;
         width: 100%;
         align-items: center;
-        background: linear-gradient(to left, #6CA2AE, #ffffff);
+        background: linear-gradient(to left, #2F4164, #ffffff);
         position: fixed;
         top: 0;
         height: 3vw;
@@ -158,6 +149,108 @@ nav{
     }
     .logo{
         width: 5%;
+        margin-left: 36px;
+    }
+    .nav-items{
+        display: none;
+    }
+    .icon{
+        display: contents;
+    }
+    .icon img{
+        width: 6%;
+        margin-right: 60px;
+    }
+
+    .hero{
+        margin-top: 32px;
+        padding: 40px;
+        background-color: #EE386A;
+        width: 100vw;
+    }
+    .hero-content{
+        color: white;
+        width: 100%;
+        padding: 32px;
+        opacity: 0;
+        transform: translateX(-100%);
+        animation: slideIn 1s ease-out forwards;
+    }
+    @keyframes slideIn {
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    .hero-header{
+        font-size: 25px;
+        width: 400px;
+        padding: 16px 64px;
+    }
+    .hero-with{
+        font-style: italic;
+        font-weight: lighter;
+        color: #6CA2AE;
+    }
+    .hero-body{
+        font-size: 20px;
+        padding: 16px 64px;
+    }
+    .hero-btn{
+        padding: 16px;
+        margin: 8px 64px;
+        border-radius: 30px;
+        border: none;
+        font-size: 15px;
+        background-color: #6CA2AE;
+        color: white;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    .hero-btn:hover{
+        transform: translateY(-10px);
+    }
+    .hero-img{
+        display: none;
+    }
+    
+    .about{
+        margin: 64px 0px;
+        padding: 64px;
+        color: white;
+        background-image: url("Assets/english-books-with-blue-background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+    }
+    .about-head{
+        font-size: 40px;
+        text-align: center;
+    }
+    .about-body{
+        padding: 64px 240px;
+        margin: auto;
+        font-size: 20px;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .nav{
+        display: flex;
+        padding: 16px 32px 16px;
+        width: 100%;
+        align-items: center;
+        background: linear-gradient(to left, #2F4164, #ffffff);
+        position: fixed;
+        top: 0;
+        height: 3vw;
+        justify-content: space-around;
+    }
+    .logo{
+        width: 6%;
         margin-left: 36px;
     }
     .nav-items{
@@ -180,9 +273,12 @@ nav{
     .hero-content{
         color: white;
         padding: 32px;
+        width: 70%;
+        margin: auto 32px;
         opacity: 0;
         transform: translateX(-100%);
-        animation: slideIn 2s ease-out forwards;
+        animation: slideIn 1.5s ease-out forwards;
+
     }
     @keyframes slideIn {
         to {
@@ -191,13 +287,12 @@ nav{
         }
     }
     .hero-header{
-        font-size: 30px;
-        width: 400px;
+        font-size: 25px;
         padding: 8px 16px;
     }
     .hero-with{
         font-style: italic;
-        font-weight: 100;
+        font-weight: lighter;
         color: #6CA2AE;
     }
     .hero-body{
@@ -225,48 +320,38 @@ nav{
     .hero-img img{
         display: none;
     }
-}
 
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 768px) {
-    nav{
-        display: flex;
-        margin: 10px auto;
-        padding: 16px 32px 16px;
-        width: 100%;
-        align-items: center;
-        background: linear-gradient(to left, #6CA2AE, #ffffff);
-        position: fixed;
-        top: 0;
-        height: 3vw;
-        justify-content: space-around;
+    .about{
+        margin: 32px 0px;
+        padding: 32px auto;
+        color: white;
+        width: 100vw;
+        background-image: url("Assets/english-books-with-blue-background.jpg");
+        background-repeat: no-repeat;
+        background-color: #6CA2AE;
+        background-size: cover;
+        background-position: center;
     }
-    .logo{
-        width: 6%;
-        margin-left: 36px;
+    .about-head{
+        font-size: 25px;
+        text-align: center;
     }
-    .nav-items{
-        display: none;
-    }
-    .icon{
-        display: contents;
-    }
-    .icon img{
-        width: 6%;
-        margin-right: 60px;
+    .about-body{
+        padding: 32px;
+        margin: auto;
+        font-size: 12px;
+        border: solid red;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-    nav{
+    .nav{
         display: flex;
-        margin: 10px auto;
         padding: 16px 32px 16px;
         width: 100%;
         align-items: center;
-        background: linear-gradient(to left, #6CA2AE, #ffffff);
+        background: linear-gradient(to left, #2F4164, #ffffff);
         color: #333333;
         position: fixed;
         top: 0;
@@ -300,18 +385,17 @@ nav{
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-    nav{
+/* @media only screen and (min-width: 992px) and (max-width: 1000px) {
+    .nav{
         display: flex;
-        margin: 10px auto;
         padding: 16px 32px 16px;
         width: 100%;
         align-items: center;
-        background: linear-gradient(to left, #6CA2AE, #ffffff);
+        background: linear-gradient(to left, #2F4164, #ffffff);
         color: #333333;
         position: fixed;
         top: 0;
-        height: 5vw;
+        height: 11vw;
         justify-content: space-around;
         font-family: sans-serif;
     }
@@ -338,4 +422,4 @@ nav{
     .icon{
         display: none;
     }
-}
+} */
