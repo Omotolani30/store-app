@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
     const currentPage = location.pathname.split("/").pop(); // Get the current page filename
-    const navLinks = document.querySelectorAll(".navbar .nav-link");
+    const navLinks = document.querySelectorAll(".nav .nav-links");
 
     navLinks.forEach(link => {
-        if (link.getAttribute("href") === currentPage) {
-            link.classList.add("active");
+        if (nav-items.getAttribute("href") === currentPage) {
+            nav-items.classList.add("active");
         }
     });
 });
