@@ -14,16 +14,16 @@
     font-optical-sizing: auto;
 }
 
-.nav{
+.navs{
     display: flex;
-    padding: 16px 32px 16px;
+    padding: 32px auto;
     width: 100%;
     align-items: center;
     background: linear-gradient(to left, #2F4164, #ffffff);
     color: #333333;
     position: fixed;
     top: 0;
-    height: 4vw;
+    height: 7vw;
     justify-content: space-around;
     z-index: 1000;
 }
@@ -136,7 +136,7 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .nav{
+    .navs{
         display: flex;
         padding: 16px 32px 16px;
         width: 100%;
@@ -238,7 +238,7 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
-    .nav{
+    .navs{
         display: flex;
         padding: 16px 32px 16px;
         width: 100%;
@@ -346,7 +346,7 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-    .nav{
+    .navs{
         display: flex;
         padding: 16px 32px 16px;
         width: 100%;
@@ -386,7 +386,7 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 /* @media only screen and (min-width: 992px) and (max-width: 1000px) {
-    .nav{
+    .navs{
         display: flex;
         padding: 16px 32px 16px;
         width: 100%;
