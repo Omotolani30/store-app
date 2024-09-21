@@ -67,7 +67,7 @@
 .hero-content{
     color: white;
     width: 50%;
-    padding: 32px;
+    padding: 16px;
     opacity: 0;
     transform: translateX(-100%);
     animation: slideIn 1s ease-out forwards;
@@ -80,8 +80,8 @@
 }
 .hero-header{
     font-size: 40px;
-    width: 400px;
-    padding: 16px 64px;
+    width: 600px;
+    padding: 16px 32px;
 }
 .hero-with{
     font-style: italic;
@@ -90,14 +90,14 @@
 }
 .hero-body{
     font-size: 20px;
-    padding: 16px 64px;
+    padding: 16px 32px;
 }
 .hero-btn{
-    padding: 16px;
-    margin: 8px 64px;
+    padding: 8px;
+    margin: 8px 32px;
     border-radius: 30px;
     border: none;
-    font-size: 15px;
+    font-size: 12px;
     background-color: #6CA2AE;
     color: white;
     cursor: pointer;
@@ -130,26 +130,37 @@
     margin: auto;
     font-size: 20px;
 }
-
-
+footer p{
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 8px;
+}
 
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .navs{
+    /* .navs{
         display: flex;
-        padding: 16px 32px 16px;
+        padding: 8px 16px;
         width: 100%;
-        align-items: center;
-        background: linear-gradient(to left, #2F4164, #ffffff);
-        position: fixed;
+        background: linear-gradient(to left, #2F4164, hsl(0, 0%, 100%));
         top: 0;
-        height: 3vw;
+        height: 8%;
         justify-content: space-around;
+    } */
+    .logo img{
+        width: 80px;
+    }
+    .navbar-items{
+        display: none;
+    }
+    .icon{
+        margin: 0px 64px;
+        padding: 10px;
     }
     .logo{
-        width: 5%;
-        margin-left: 36px;
+        width: 8%;
+        margin-left: 10px;
     }
     .nav-items{
         display: none;
@@ -159,14 +170,15 @@
     }
     .icon img{
         width: 6%;
-        margin-right: 60px;
+        margin-right: 8px;
     }
 
     .hero{
         margin-top: 32px;
         padding: 40px;
-        background-color: #EE386A;
-        width: 100vw;
+        background-color: #ee3868;
+        /* width: 100%; */
+        border: solid blue;
     }
     .hero-content{
         color: white;
@@ -215,21 +227,22 @@
     }
     
     .about{
-        margin: 64px 0px;
-        padding: 64px;
+        margin: 32px 0px;
+        /* padding: 64px; */
         color: white;
         background-image: url("Assets/english-books-with-blue-background.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        width: 100vw;
+        /* width: 100vw; */
+        border: solid green;
     }
     .about-head{
         font-size: 40px;
         text-align: center;
     }
     .about-body{
-        padding: 64px 240px;
+        /* padding: 64px 240px; */
         margin: auto;
         font-size: 20px;
     }
