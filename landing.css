@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.playfair-display {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.rale-way{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.navbar{
+    background-color: rgb(5, 3, 46);
+    /* background-color: rgb(7, 4, 61); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 32px;
+    padding: 16px 32px;
+}
+.logo{
+    width: 2vw;
+}
+.nav-items ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: center;
+    /* margin: 8px 16px; */
+    width: 50vw;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+}
+.nav-link :hover{
+    color: black;
+    /* text-decoration: dashed; */
+}
+
+.hero{
+    background-color: rgb(5, 3, 46);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 100px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .navbar{
+        background-color: rgb(7, 4, 61);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        margin-top: 0px;
+        padding: 16px 32px;
+    }
+    .logo{
+        margin-top: 5px;
+        width: 6vw;
+    }
+    .nav-items ul{
+        justify-content: space-around;
+        margin: 8px 16px;
+        width: 70vw;
+    }
+    .nav-link{
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    .navbar{
+        margin-top: 0px;
+    }
+    .logo{
+        margin-top: 2px;
+        width: 5vw;
+    }
+    .nav-items ul{
+        margin: 16px;
+        width: 70vw;
+    }
+    .nav-link{
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    .navbar{
+        margin-top: 0px;
+        padding: 16px 64px;
+    }
+    .logo{
+        margin-top: 2px;
+        width: 6vw;
+    }
+    .nav-items ul{
+        margin: 16px 32px;
+        width: 80vw;
+    }
+    .nav-link{
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {...}
