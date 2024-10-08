@@ -21,18 +21,18 @@
     align-items: center;
     position: relative;
     margin-top: 32px;
-    padding: 16px 32px;
+    padding: 16px 48px;
 }
 .logo{
     width: 2vw;
 }
 .nav-items ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     list-style-type: none;
     align-items: center;
     /* margin: 8px 16px; */
-    width: 50vw;
+    width: 40vw;
 }
 .nav-link{
     text-decoration: none;
@@ -51,6 +51,22 @@
     font-size: 30px;
     text-align: center;
     padding: 100px;
+    height: 200px;
+}
+.hero p{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+.red{
+    color:  rgb(172,43,78);
+}
+.with{
+    font-size: 20px;
+    font-weight: normal;
+}
+.blue{
+    font-family: sans-serif;
+    color:  rgb(105,158,170);
 }
 
 
@@ -77,6 +93,15 @@
     .nav-link{
         font-size: 18px;
         font-weight: 600;
+    }
+
+    .hero{
+        background-color: rgb(5, 3, 46);
+        color: white;
+        font-size: 25px;
+        text-align: center;
+        padding: 100px;
+        height: 200px;
     }
 }
 
